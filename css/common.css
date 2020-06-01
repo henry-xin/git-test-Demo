@@ -1,0 +1,165 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+.header{
+    margin:25px auto 0 80px;  /*1顺序 上,右,下,左*/
+    width:1200px;
+}
+.header .menu ul{            /*2 class选择方式*/
+    display: none;         
+    list-style: none;      /*清楚无序列表里的"."*/
+    position:absolute;
+    width:80px;
+    opacity:0.5;                 /*透明效果*/
+    background-color:white;
+}
+
+.header .logo{             
+    float:left;
+    position: relative;
+}
+.header .menu{
+    float:left;
+    position: relative;
+    margin-top:12px;
+    margin-left:12px;
+}
+/* .header .menu:hover ul{ */    /*伪类 ul的隐藏*/
+/*    display: block; */         /*块状显示--菜单的折叠功能*/
+/*} */
+.header .menu ul li{
+    margin-top:20px;
+    text-align: center;
+}
+.header .menu .menu_title{
+    border-bottom:1px solid black;
+    padding-bottom: 20px;
+    width: 80px;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.header .auth ul{
+    list-style: none;
+
+}
+.header .auth{
+    float:right;
+}
+.header .auth ul li{
+    float: right;
+    margin-right:40px;
+    margin-top:12px;
+}
+
+.content{
+    width:1200px;
+    margin:25px auto 0 80px;
+}
+.content .banner .banner-img{
+    margin-top:20px;
+}
+.content .img-content ul{
+    width:1280px;
+}
+.content .img-content ul li{
+    width:360px;
+    float:left;
+    margin:0 60px 60px 0;
+    list-style: none;
+    /*设置边框等格式*/
+    margin-top:20px;
+    height:500px;
+    box-shadow: 0px 0px 3px 3px #ccc;
+    -webkit-box-shadow:0px 0px 3px 3px #ccc;/*上面语句无法识别时用于谷歌浏览器*/
+    -moz-box-shadow:0px 0px 3px 3px #ccc;/*上面语句无法识别时用于火狐浏览器*/
+    background-color:#FFFFFF;
+
+}
+.img-content .info .img-btn{
+    width:300px;
+}
+.img-content .info .img-btn .btn{
+    width: 60px;
+    height:30px;
+    background-color:red;
+    text-align:center;
+    border-radius: 5px;
+    float:right;
+}
+.img-content .info .img-btn .cart img{
+    width:25px;
+    height:20px;
+    margin-top:5px;
+
+}
+.img-content .info .img-btn .price{
+    float: left;
+}
+/*设置标题*/
+.img-content .info h3{
+    font-size:25px;
+    color:red;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+/*段落的行间距*/
+.img-content .info p{
+    line-height: 25px;
+    margin-bottom:10px;
+}
+.info{
+    margin-left:30px;
+    margin-right:30px;
+}
+
+.img-content>ul>li .price{      /*区分">"和"空格"的使用区别*/
+    color:red;
+    font-size:20px;
+
+} 
+
+body{
+    background-color:#F5F5F5;
+}
+.page-nav ul li{
+    float: left;
+    margin-right:20px;
+    list-style:none;
+}
+
+.page-nav{
+    width: 1200px;
+    height:60px;
+    line-height:60px;
+    border:1px solid black;
+    overflow: hidden;              /*溢出处理,防患于未然*/
+}
+.page-nav ul{
+    margin:auto;
+    overflow: hidden;
+    width:500px;
+}
+.first-page{
+    border-radius: 50%;
+    background-color:#c5c5c5;
+    padding:3px 9px;
+}
+
+.footer{
+    width:1200px;
+    height:100px;
+    margin:60px auto;
+    border-top:1px solid #cccccc;
+    overflow: hidden;
+}
+
+.footer p{
+    text-align: center;
+    line-height:180px;
+}
+.footer p span{
+    color:red;
+}
